@@ -77,11 +77,8 @@
 		FC5E5E8E1AEE89EC00318740 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				FC5E5E911AEE89EC00318740 /* AppDelegate.swift */,
 				FC5E5E931AEE89EC00318740 /* ViewController.swift */,
 				FC5E5E951AEE89EC00318740 /* Main.storyboard */,
-				FC5E5E981AEE89EC00318740 /* Images.xcassets */,
-				FC5E5E9A1AEE89EC00318740 /* LaunchScreen.xib */,
 				FC5E5E8F1AEE89EC00318740 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -90,6 +87,9 @@
 		FC5E5E8F1AEE89EC00318740 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC5E5E911AEE89EC00318740 /* AppDelegate.swift */,
+				FC5E5E9A1AEE89EC00318740 /* LaunchScreen.xib */,
+				FC5E5E981AEE89EC00318740 /* Images.xcassets */,
 				FC5E5E901AEE89EC00318740 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,14 +156,18 @@
 		FC5E5E841AEE89EB00318740 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Henry Arias";
 				TargetAttributes = {
 					FC5E5E8B1AEE89EC00318740 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F9DJG6SY56;
 					};
 					FC5E5EA01AEE89EC00318740 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F9DJG6SY56;
 						TestTargetID = FC5E5E8B1AEE89EC00318740;
 					};
 				};
@@ -342,9 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -362,6 +372,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -373,6 +385,7 @@
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Debug;
@@ -381,6 +394,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -388,6 +403,7 @@
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Release;
@@ -411,6 +427,7 @@
 				FC5E5EAD1AEE89EC00318740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC5E5EAE1AEE89EC00318740 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				FC5E5EB01AEE89EC00318740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
